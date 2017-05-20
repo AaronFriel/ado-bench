@@ -7,6 +7,9 @@ This repository exists to discover what sort of code might be susceptible to reg
 Submitted benchmarks:
 
 * Should run in absence of IO.
+
+  That is, benchmarks should target the compiler, not your computer's disk or network performance.
+
 * Should be easily run with `criterion` or `weigh`.
 * Should be designed to utilize one or more of the following:
   * `<$`, when a `do` sequence's result does not depend on any previous statement, e.g.:
